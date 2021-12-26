@@ -1,8 +1,8 @@
-window.onload = function () {
-    initShoppingList()
+window.onload = function() {
+    initShoppingList ();
 };
 
-function initShopinglist () {
-    let form = document.getElementById("item-form")
-    console.log(form)
-}
+function initShoppingList (){
+    let form= document.getElementById("item-form")
+    console.log(from);
+};
