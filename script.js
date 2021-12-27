@@ -10,7 +10,7 @@ function initShoppingList (){
 }
 
 function handleItemForm (event, formRef) {
-    if (event.preventDefault() ()) {
+    if (event.preventDefault() ) {
         event.preventDefault();
     }
 
