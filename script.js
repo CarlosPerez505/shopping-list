@@ -14,28 +14,25 @@ function handleItemForm (event, formRef) {
         event.preventDefault();
     }
 
-    addItemToShoppingList()
+    addItemToShoppingList();
     return false;
 }
+
 
 
 function addItemToShoppingList () {
     let itemName = document.getElementById("item-name");
     let itemAmount = document.getElementById("item-amount");
 
-
     let itemHtml = createListItemHtml();
     console.log("Item Html: ", itemHtml);
-    let itemListRef= document.getElementById("shopping-list")
-    itemListRef.insertAdjacentHTML("afterend ", itemHtml)
-
-
-
+    let itemListRef= document.getElementById("shopping-list");
+    itemListRef.insertAdjacentHTML("afterend ", itemHtml);
 }
 
 function createListItemHtml () {
-    return '<li>
+    return '<li>'
               Item Name - Amount
-            </li>'
+            '</li>'
 };
 
