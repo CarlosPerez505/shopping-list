@@ -34,6 +34,8 @@ function addItemToShoppingList () {
 }
 
 function createListItemHtml () {
-    return '<li> ItemNameAmount </li>'
+    return '<li>
+              'ItemNameAmount
+            </li>'
 };
 
