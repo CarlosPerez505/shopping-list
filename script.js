@@ -13,16 +13,19 @@ function handleItemForm (event, formRef) {
     if (event.preventDefault()) {
         event.preventDefault();
     }
-    let itemHtml = addItemToShoppingList();
-    console.log("Item Html: ", itemHtml)
-    let itemListRef = document.getElementById("shopping-list");
-    itemListRef.insertAdjacentHTML("afterend", itemHtml)
+    addItemToShoppingList();
+
     return false;
 }
 
  function addItemToShoppingList () {
     let itemName = document.getElementById("item-name");
     let itemAmount = document.getElementById("item-amount");
+    let itemHtml = createItemListHtml();
+     console.log("Item Html: ", itemHtml)
+     let itemListRef = document.getElementById("shopping-list");
+     itemListRef.insertAdjacentHTML("afterend", itemHtml)
+
 }
 
 function createItemListHtml (){
