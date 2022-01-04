@@ -28,10 +28,10 @@ function handleItemForm (event, formRef) {
      itemListRef.insertAdjacentHTML("afterend", itemHtml)
 
 }
-
-function createItemListHtml (itemName, itemAmount){
-    return '<li>${itemName} - ${itemAmount}<button type="button">Delete Item</button> </li>';
+ function createListItemHtml (Item, itemAmount) {
+    return '<li> ${itemName} - ${itemAmount}<button type="button">Delete Item</button> </li>';
 }
+
 
 
 
