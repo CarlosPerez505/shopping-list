@@ -36,11 +36,11 @@ function demo () {
      let itemListRef = document.getElementById("shopping-list");
      itemListRef.insertAdjacentHTML("afterend", itemHtml)
 
-};
-
-
-
 }
+
+
+
+
 
 
 
