@@ -6,7 +6,7 @@ function initShoppingList () {
     let form = document.getElementById("item-form");
 
     form.addEventListener("submit", (event) => {
-        handleItemForm ( );
+        handleItemForm ();
     });
 }
 
@@ -24,7 +24,7 @@ function handleItemForm (event, formRef) {
     let itemAmount = document.getElementById("item-amount")
 
     // creates list item html and appends to page
-    let itemHtml = createItemListHtml(itemName.value, itemAmount);
+    let itemHtml = createItemListHtml(itemName, itemAmount);
      console.log("Item Html: ", itemHtml)
      let itemListRef = document.getElementById("shopping-list");
      itemListRef.insertAdjacentHTML("afterend", itemHtml)
@@ -34,7 +34,7 @@ function handleItemForm (event, formRef) {
 
 function createItemListHtml (itemName, itemAmount) {
     return `<li>
-                ${itemName} - ${itemAmount}
+                ${itemName.value} - ${itemAmount.value}
             </li>`;
 }
 
