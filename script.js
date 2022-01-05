@@ -5,7 +5,7 @@ window.onload= function () {
 function initShoppingList () {
     let form = document.getElementById("item-form")
 
-    from.addEventListener("submit", (event) => {
+    form.addEventListener("submit", (event) => {
         handleItemForm(event, form);
     });
 }
