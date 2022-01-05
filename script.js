@@ -17,8 +17,6 @@ function handleItemForm(event, formRef) {
 
     addItemToShoppingList ();
 
-    console.log(demo );
-
     return false;
 
 }
@@ -40,6 +38,7 @@ function addItemToShoppingList () {
 function createListItemHtml (itemName, itemAmount) {
     return `<li>
                 ${itemName} - ${itemAmount}
+                <button type="button">Delete Item</button>
             </li>`;
 }
 
