@@ -46,17 +46,13 @@ function setDeleteButtonEvent(id) {
 
 
 function createItemListHtml (itemName, itemAmount) {
-    return `<li id="item${id}">
+    return `<li>
                 ${itemName} - ${itemAmount}
                 <button id="button${id}" type="button"> Delete Item </button>
             </li>`;
 }
 
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
-}
+
 
 
 
