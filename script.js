@@ -29,10 +29,8 @@ function handleItemForm (event, formRef) {
 
 }
 
-function createItemListHtml () {
-    return '<li> ' +
-        '${itemName} - ${itemAmount} ' +
-        '<button type = "button" > Delete Item </button> </li>';
+function createListItemHtml (itemName, itemAmount) {
+    return <li> ${itemName} - ${itemAmount} <button type="button"> Delete Item </button></li>;
 }
 
 
