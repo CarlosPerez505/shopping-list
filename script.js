@@ -30,10 +30,10 @@ function handleItemForm (event, formRef) {
 }
 
 function createItemListHtml (itemName, itemAmount) {
-    return '<li>
+    return `<li>
                 ${itemName} - ${itemAmount}
                 <button type="button"> Delete Item </button>
-            </li>';
+            </li>`;
 }
 
 
