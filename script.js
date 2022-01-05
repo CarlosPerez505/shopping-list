@@ -15,7 +15,7 @@ function handleItemForm (event, formRef) {
         event.preventDefault();
     }
     addItemToShoppingList();
-    console.log("event: ", event)
+    console.log("hello world")
     return false;
 }
 
