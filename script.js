@@ -17,7 +17,7 @@ function handleItemForm(event, formRef) {
 
     addItemToShoppingList ();
 
-    console.log(demo ());
+    console.log(demo );
 
     return false;
 
