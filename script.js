@@ -11,15 +11,20 @@ function initShoppingList () {
 }
 
 function handleItemForm(event, formRef) {
-    if(event.preventDefault()) {
+    if(event.preventDefault) {
         event.preventDefault();
     }
 
     addItemToShoppingList ();
 
-
+    console.log(demo ());
 
     return false;
+
+}
+
+function demo (){
+    return 1;
 }
 
 function addItemToShoppingList () {
