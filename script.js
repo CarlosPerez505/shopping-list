@@ -14,14 +14,20 @@ function handleItemForm (event, formRef) {
         event.preventDefault();
     }
     addItemToShoppingList();
+    console.log(demo());
 
     return false;
 }
 
+function demo () {
+    return 1;
+}
+
+
  function addItemToShoppingList () {
     let itemName = document.getElementById("item-name");
     let itemAmount = document.getElementById("item-amount")
-    let id = getRandomInt(0, 10000000);
+
 
 
     // creates list item html and appends to page
@@ -30,16 +36,9 @@ function handleItemForm (event, formRef) {
      let itemListRef = document.getElementById("shopping-list");
      itemListRef.insertAdjacentHTML("afterend", itemHtml)
 
-     setDeleteButtonEvent(id)
-
-}
+};
 
 
-function setDeleteButtonEvent(id) {
-    let deleteButton = document.getElementById("button"+id);
-    deleteButton.addEventListener("click", ()=> {
-        console.log("Delete Button Works");
-    })
 
 }
 
