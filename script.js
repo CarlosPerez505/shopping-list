@@ -10,7 +10,7 @@ function initShoppingList () {
 }
 
 function handleItemForm (event, formRef) {
-    if (event.preventDefault()) {
+    if (event.preventDefault) {
         event.preventDefault();
     }
     addItemToShoppingList();
@@ -29,7 +29,7 @@ function handleItemForm (event, formRef) {
 
 }
 
-function createListItemHtml (itemName, itemAmount) {
+function createItemListHtml (itemName, itemAmount) {
     return <li> ${itemName} - ${itemAmount} <button type="button"> Delete Item </button></li>;
 }
 
