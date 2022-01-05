@@ -21,10 +21,6 @@ function handleItemForm(event, formRef) {
 
 }
 
-function demo (){
-    return 1;
-}
-
 function addItemToShoppingList () {
     let itemName = document.getElementById("item-name");
     let itemAmount = document.getElementById("item-amount");
