@@ -28,21 +28,38 @@ function demo (){
 function addItemToShoppingList () {
     let itemName = document.getElementById("item-name");
     let itemAmount = document.getElementById("item-amount");
+    let id = getRandomInt()
 
-    let itemHtml = createListItemHtml(itemName.value, itemAmount.value);
+    // Creates list item html and appends to page.
+    let itemHtml = createListItemHtml(itemName.value, itemAmount.value, id);
     console.log("itemHtml: ", itemHtml)
     let itemListRef = document.getElementById("shopping-list");
     itemListRef.insertAdjacentHTML("afterend", itemHtml)
+
+    setDeleteButtonEvent(id);
+}
+
+function setDeleteButtonEvent (id) {
+    let deleteButton = document.getElementById("button" +id);
+    deleteButton.addEventListener("click", () => {
+        console.log("deleteButton Works");
+
+    });
+
 }
 
 function createListItemHtml (itemName, itemAmount) {
-    return `<li>
+    return `<li id="item${id}">
                 ${itemName} - ${itemAmount}
-                <button type="button">Delete Item</button>
+                <button id= "button${id}" type="button">Delete Item</button>
             </li>`;
 }
 
-
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+}
 
 
 
