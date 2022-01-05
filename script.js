@@ -7,7 +7,7 @@ function initShoppingList () {
 
     from.addEventListener("submit", (event) => {
         handleItemForm(event, form);
-    })
+    });
 }
 
 function handleItemForm(event, formRef) {
