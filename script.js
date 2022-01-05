@@ -15,10 +15,8 @@ function handleItemForm(event, formRef) {
         event.preventDefault();
     }
 
-    let itemHtml = addItemToShoppingList ();
-    console.log("itemHtml: ", itemHtml)
-    let itemListRef = document.getElementById("shopping-list");
-    itemListRef.insertAdjacentHTML("afterend", itemHtml)
+    addItemToShoppingList ();
+
 
 
     return false;
@@ -27,6 +25,11 @@ function handleItemForm(event, formRef) {
 function addItemToShoppingList () {
     let itemName = document.getElementById("item-name");
     let itemAmount = document.getElementById("item-amount");
+
+    let itemHtml = createListItemHtml();
+    console.log("itemHtml: ", itemHtml)
+    let itemListRef = document.getElementById("shopping-list");
+    itemListRef.insertAdjacentHTML("afterend", itemHtml)
 }
 
 function createListItemHtml () {
