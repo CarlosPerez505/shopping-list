@@ -39,11 +39,6 @@ function demo () {
 }
 
 
-
-
-
-
-
 function createItemListHtml (itemName, itemAmount) {
     return `<li>
                 ${itemName} - ${itemAmount}
