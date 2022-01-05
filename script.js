@@ -32,7 +32,7 @@ function addItemToShoppingList () {
     itemListRef.insertAdjacentHTML("afterend", itemHtml)
 }
 
-function createListItemHtml () {
+function createListItemHtml (itemName, itemAmount) {
     return `<li>
                 ${itemName} - ${itemAmount}
             </li>`;
