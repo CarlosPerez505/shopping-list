@@ -6,7 +6,7 @@ function initShoppingList () {
     let form = document.getElementById("item-form")
 
     from.addEventListener("submit", (event) => {
-        handleItemForm(event, from);
+        handleItemForm(event, form);
     })
 }
 
