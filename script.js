@@ -21,7 +21,7 @@ function handleItemForm (event, formRef) {
  function addItemToShoppingList () {
     let itemName = document.getElementById("item-name");
     let itemAmount = document.getElementById("item-amount")
-    let id = getRandomInt(0, 10000000)
+    let id = getRandomInt(0, 10000000);
 
 
     // creates list item html and appends to page
@@ -48,7 +48,7 @@ function setDeleteButtonEvent(id) {
 function createItemListHtml (itemName, itemAmount) {
     return `<li>
                 ${itemName} - ${itemAmount}
-                <button id="button${id}" type="button"> Delete Item </button>
+                <button type="button"> Delete Item </button>
             </li>`;
 }
 
