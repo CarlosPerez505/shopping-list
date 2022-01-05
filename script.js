@@ -19,14 +19,9 @@ function handleItemForm (event, formRef) {
     return false;
 }
 
-
-
-
  function addItemToShoppingList () {
     let itemName = document.getElementById("item-name");
     let itemAmount = document.getElementById("item-amount")
-
-
 
     // creates list item html and appends to page
     let itemHtml = createItemListHtml(itemName.value, itemAmount.value, id);
