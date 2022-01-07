@@ -28,7 +28,7 @@ function addItemToShoppingList () {
 
     // Creates list item html and appends to page.
     let itemHtml = createListItemHtml(itemName.value, itemAmount.value, id);
-    console.log("itemHtml: ", itemHtml)
+    console.log("Item HTML: ", itemHtml)
     let itemListRef = document.getElementById("shopping-list");
     itemListRef.insertAdjacentHTML("afterend", itemHtml)
 
@@ -53,7 +53,7 @@ function createListItemHtml (itemName, itemAmount,id) {
 
 function removeListItem (id) {
     let listItem = document.getElementById("item" +id);
-    listItem.parentNode.removeEventListener(listItem);
+    listItem.parentNode.removeChild(listItem);
 }
 
 function getRandomInt(min, max) {
